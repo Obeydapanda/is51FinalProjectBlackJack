@@ -14,4 +14,6 @@ If dealer or User go over 21 they lose
 if compared and they equal, Game = draw
 if dealer > user, dealer wins, while under 21
 if user > dealer user wins, while under 21
+
+
 """
