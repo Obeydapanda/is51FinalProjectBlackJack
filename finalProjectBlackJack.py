@@ -12,6 +12,6 @@ Once user input is finished Deal the dealers hands, if dealerTotal < 16, else de
 After Dealer and User are done being dealt cards, compare the 2, higher number wins
 If dealer or User go over 21 they lose
 if compared and they equal, Game = draw
-if dealer > user, dealer wins
-if user > dealer userwins
+if dealer > user, dealer wins, while under 21
+if user > dealer user wins, while under 21
 """
