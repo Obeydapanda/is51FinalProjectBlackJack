@@ -89,12 +89,13 @@ def evaluate(dealer_hand, user_hand):
 
 def main():
     choice = 0
+    repeat = 0
     dealer_hand = deal(deck)
     user_hand = deal(deck)
     print("Welcome to BlackJack!\n")
     while choice != "Quit":    
         print("The Dealer is showing a ", dealer_hand[0])
-        print("Your hand consist of ", str(user_hand), " for a total of ", str(total(user_hand)))
+        print("Your hand consists of ", str(user_hand), " for a total of ", str(total(user_hand)))
         blackjack(user_hand, dealer_hand)
         choice = input("Do you want to [Hit], [Stay] or [Quit]?\n").lower()
         if choice == "hit":
@@ -102,6 +103,13 @@ def main():
             while total(dealer_hand) < 17:
                 hit(dealer_hand)
             evaluate(dealer_hand, user_hand)
+            """
+            while total(user_hand) < 21:
+                repeat = input(" Your hand is now ", total(user_hand), " would you like to hit again? (Yes/No) \n").lower()
+                if repeat == "yes":
+                    hit(user_hand)
+            evaluate(dealer_hand, user_hand)
+            """
             again()
         elif choice == "stay":
             while total(dealer_hand) < 17:
