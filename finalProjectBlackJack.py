@@ -89,7 +89,7 @@ def evaluate(dealer_hand, user_hand):
 
 def main():
     choice = 0
-    repeat = 0
+    #repeat = 0
     dealer_hand = deal(deck)
     user_hand = deal(deck)
     print("Welcome to BlackJack!\n")
