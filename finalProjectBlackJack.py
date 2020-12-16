@@ -19,7 +19,7 @@ def deal(deck):
 def hit(hand):
     card = deck.pop()
     if card == 11:
-         card = "Jack"
+        card = "Jack"
     if card == 12: 
         card = "Queen"
     if card == 13: 
@@ -92,9 +92,9 @@ def main():
     #repeat = 0
     dealer_hand = deal(deck)
     user_hand = deal(deck)
-    print("Welcome to BlackJack!\n")
+    print("\n Welcome to BlackJack!\n")
     while choice != "Quit":    
-        print("The Dealer is showing a ", dealer_hand[0])
+        print("The Dealer is showing a ", dealer_hand[0] , "and an unknown")
         print("Your hand consists of ", str(user_hand), " for a total of ", str(total(user_hand)))
         blackjack(user_hand, dealer_hand)
         choice = input("Do you want to [Hit], [Stay] or [Quit]?\n").lower()
