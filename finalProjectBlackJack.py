@@ -9,10 +9,14 @@ def deal(deck):
     for i in range (2):
         random.shuffle(deck)
         card = deck.pop()
-        if card == 11: card = "Jack"
-        if card == 12: card = "Queen"
-        if card == 13: card = "King"
-        if card == 14: card = "Ace"
+        if card == 11: 
+            card = "Jack"
+        if card == 12: 
+            card = "Queen"
+        if card == 13: 
+            card = "King"
+        if card == 14: 
+            card = "Ace"
         hand.append(card)
     return hand
 
