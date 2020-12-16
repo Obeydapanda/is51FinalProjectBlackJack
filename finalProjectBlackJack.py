@@ -50,7 +50,7 @@ def again():
     choice = input("Would you like to play again? (Yes/No)\n").lower()
     if choice == "yes":
         dealer_hand = []
-        player_hand = []
+        user_hand = []
         deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]*4
         main()
 
