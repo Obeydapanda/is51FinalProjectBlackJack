@@ -71,13 +71,13 @@ def evaluate(dealer_hand, user_hand):
         print("Sorry, Dealer has gotten BlackJack with ", dealer_hand)
         #if the dealer gets to 21
     elif total(dealer_hand) == total(user_hand):
-        print ("Both you and the dealer had the same amount of points \n", "User at \n", total((user_hand)), "Dealer at ", total((dealer_hand)))
+        print ("Both you and the dealer had the same amount of points \n", "User at", total((user_hand)), "\n Dealer at ", total((dealer_hand)))
         #if you and the dealer have the same hand
     elif total(user_hand) > 21:
         print("Sorry, your hand was ", total((user_hand)), " going over your 21 which means you lost")
         #if the user goes over 21
     elif total(dealer_hand) > 21:
-        print ("Congrats! Dealer had", total((dealer_hand)), " and went over 21 and you win!")
+        print ("Congrats! Dealer had", total((dealer_hand)), " and went over 21 and you win! You had ", total((user_hand)))
         #if the dealer goes over 21
     elif total(user_hand) > total(dealer_hand):
         print("Congrats! You Win, your ", total((user_hand)), " was higher than the dealers ", total((dealer_hand)))
