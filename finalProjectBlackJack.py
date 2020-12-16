@@ -45,15 +45,6 @@ def total(hand):
         else: total += card
     return total
 
-
-def blackjack(user_hand, dealer_hand):
-    if total(user_hand) == 21:
-        print("Congratualtions! you got Blackjack with ", user_hand, "\n")
-        again()
-    elif total(dealer_hand) == 21:
-        print("Sorry, Dealer has gotten BlackJack with ", dealer_hand, "\n")
-        again()
-
         
 def again():
     choice = input("Would you like to play again? (Yes/No)\n").lower()
@@ -66,6 +57,14 @@ def again():
     else:
         print("Good Bye!")
         exit()
+
+def blackjack(user_hand, dealer_hand):
+    if total(user_hand) == 21:
+        print("Congratualtions! you got Blackjack with ", user_hand, "\n")
+        again()
+    elif total(dealer_hand) == 21:
+        print("Sorry, Dealer has gotten BlackJack with ", dealer_hand, "\n")
+        again()
 
 def evaluate(dealer_hand, user_hand):
     if total(user_hand) == 21:
