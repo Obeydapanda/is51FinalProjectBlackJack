@@ -40,7 +40,8 @@ def total(hand):
         if card == "Jack" or card == "Queen" or card == "King":
             total += 10
         elif card == "Ace":
-                if total >= 11: total += 1
+                if total >= 11: 
+                    total += 1
                 else: total+= 11
         else: total += card
     return total
